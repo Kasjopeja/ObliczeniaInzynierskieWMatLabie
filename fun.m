@@ -1,4 +1,4 @@
-function c=jaki_ciag(w)
+function c=fun(w)
 
 c='';
 if all(w(2)-w(1) == diff(w))
