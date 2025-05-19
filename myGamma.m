@@ -10,3 +10,6 @@ N = 10000;
     output = (1./z).*output;
 
 end
+
+% n=1:1e5;
+%output=1/*prod(((1+1./n).^s)./(1+s./n));

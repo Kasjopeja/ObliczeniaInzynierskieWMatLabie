@@ -41,3 +41,22 @@ figure
 h=surf(a,b,abs(Y), angle(Y));
 set(h, 'EdgeColor', 'none');
 colorbar;
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+x=-10:0.01:10;
+y=gamma(x);
+plot(x,y);
+set(gca, 'YLim', [-10,10])
+
+a=-5:0.01:5;
+b=-2:0.01:2;
+Y=zeros(length(b), length(a));
+for i=1:length(a)
+    for j=1:length(b)
+        Y(j,i)=myGamma(a(i)+1i*b(j));
+    end
+end
+
+surf(a,b,abs(Y),angle(Y), "EdgeColor","none")
+colorbar
