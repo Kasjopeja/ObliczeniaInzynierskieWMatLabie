@@ -54,7 +54,7 @@ b=-2:0.1:2;
 [A,B]=meshgrid(a,b);
 X=A+1i*B;
 Y=polyval(p,X);
-surf(a,b,abs(Y))
+surf(A,B,abs(Y))
 xlabel('Re(x)')
 ylabel('Im(x)')
 zlabel('|f(x)|')

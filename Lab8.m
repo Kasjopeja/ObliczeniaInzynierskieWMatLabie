@@ -9,6 +9,8 @@ p=[1, -3, 2, 0, -1, 3, -4];
 x=-1.2:0.05:2.2;
 
 r=roots(p);
+
+
 dp=polyder(p);
 dr=roots(dp);
 d2p=polyder(dp);
